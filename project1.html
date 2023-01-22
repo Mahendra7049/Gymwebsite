@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="project1.css">
+<style>
+    body {
+        padding: 0%;
+        margin: 0%;
+        background: url(./img/mp.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        color: aliceblue;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover {
+        color: gray;
+        text-decoration: underline;
+        /* background-color: aqua; */
+    }
+
+    .left {
+        position: absolute;
+        left: 22px;
+        top: 18px;
+        display: inline-block;
+       
+    }
+
+    .left img {
+        width: 80px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        top: 18px;
+        margin: 19px auto;
+        
+
+    }
+
+    .btn {
+        padding: 5px;
+        background-color: black;
+        color: aliceblue;
+        margin: 10px;
+        border: 2px solid aliceblue;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: blue;
+    }
+
+    #name {
+        font-family: cursive;
+        padding: 0%;
+    }
+
+    .container {
+       
+        margin: 2px 2px;
+        padding: 75px;
+        border-radius: 15px;
+        font-size: 20px;
+        font-family: cursive;
+        margin-top: 180px;
+        margin-left: 50px;
+        width: 28%;
+    }
+
+    .right {
+        position: absolute;
+        right: 22px;
+        top: 18px;
+        display: inline-block;
+    }
+    .fom{
+        border: 5px solid;
+        border-radius: 10px;
+    }
+    
+       
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="..//project1/img/log.jfif" alt="">
+            <h5 id="name"> Mayank GYM</h5>
+
+        </div>
+        <div class="mid">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"> Fitness Calculator</a></li>
+                    <li><a href="#"> contact Us</a></li>
+                    <li> <a href="#">diet</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn"> call us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <form action="hello.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="fom"><br>
+            <label for="cont">ContactNumber:</label>
+            <input type="text" id="cont" class="fom"><br>
+            <label for="add">Address:</label>
+            <input type="text" id="add" class="fom">
+            </form>
+        
+    </div>
+
+</body>
+
+</html>
